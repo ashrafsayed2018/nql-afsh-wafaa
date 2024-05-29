@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* blue theme */
+@layer components {
+  .themeBgColor {
+    @apply bg-gradient-to-r from-[#00b7ff] to-[#0059da];
+  }
+  .hoverBgColor {
+    @apply hover:bg-gradient-to-r hover:from-[#0059da] hover:to-[#00b7ff];
+  }
+  .textColor {
+    @apply text-[#00b7ff];
+  }
+  .hoverTextColor {
+    @apply hover:text-[#0059da];
+  }
+  .headingColor {
+    @apply text-3xl text-center mb-4 textColor font-bold;
+  }
+  .headingBorderColor {
+    @apply block w-14 h-[2px] themeBgColor mx-auto mb-8;
+  }
+  .hoverBorderColor {
+    @apply hover:border-[#0059da];
+  }
+  .groupHoverBg {
+    @apply group-hover:bg-gradient-to-r group-hover:from-[#0059da] group-hover:to-[#00b7ff];
+  }
+}
+
+/* pink theme */
+@layer components {
+  .themeBgColor {
+    @apply bg-gradient-to-r from-[#8c00ff] to-[#4b00b7];
+  }
+  .hoverBgColor {
+    @apply hover:bg-gradient-to-r hover:from-[#4b00b7] hover:to-[#8c00ff];
+  }
+  .textColor {
+    @apply text-[#8c00ff];
+  }
+  .hoverTextColor {
+    @apply hover:text-[#4b00b7];
+  }
+  .headingColor {
+    @apply text-3xl text-center mb-4 textColor font-bold;
+  }
+  .headingBorderColor {
+    @apply block w-14 h-[2px] themeBgColor mx-auto mb-8;
+  }
+  .hoverBorderColor {
+    @apply hover:border-[#4b00b7];
+  }
+  .groupHoverBg {
+    @apply group-hover:bg-gradient-to-r group-hover:from-[#b331e6] group-hover:to-[#e379d3];
+  }
+}
